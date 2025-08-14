@@ -1,0 +1,43 @@
+version: 2
+
+sources:
+  - name: dev
+    database: mochache_demo
+    schema: dev
+    tables:
+      - name: data
+        description: "Raw weather data table in the dev schema."
+        columns:
+          - name: id
+            description: "Unique identifier for each record."
+            tests:
+              - not_null
+              - unique
+          - name: city
+            description: "City where the weather data was collected."
+            tests:
+              - not_null
+          - name: country
+            description: "Country where the weather data was collected."
+            tests:
+              - not_null
+          - name: region
+            description: "Region or state where the city is located."
+          - name: lat
+            description: "Latitude coordinate of the location."
+          - name: lon
+            description: "Longitude coordinate of the location."
+          - name: temperature
+            description: "Recorded temperature in degrees Celsius."
+          - name: weather_desc
+            description: "Short description of the weather conditions."
+          - name: wind_speed
+            description: "Wind speed in km/h."
+          - name: wind_degree
+            description: "Wind direction in degrees."
+          - name: wind_dir
+            description: "Compass direction of the wind."
+          - name: pressure
+            description: "Atmospheric pressure in hPa."
+          - name: humidity
+            description: "Humidity percentage."

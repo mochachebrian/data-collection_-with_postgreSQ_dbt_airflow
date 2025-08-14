@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: weather_src
+    database: mochache_demo      # your database name
+    schema: public            # or your schema name
+    tables:
+      - name: data    # table in your database

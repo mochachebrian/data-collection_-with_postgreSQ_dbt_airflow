@@ -1,0 +1,38 @@
+[0m15:21:52.420949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70acd37d7560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70acd5040110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70acd3615370>]}
+
+
+============================== 15:21:52.484545 | 2dfe9a6d-eeb9-4ad2-bf44-294f60343a22 ==============================
+[0m15:21:52.484545 [info ] [MainThread]: Running with dbt=1.10.8
+[0m15:21:52.485715 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/mocha/respos/weather-data-project/logs', 'fail_fast': 'False', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select staging --profiles-dir .', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:21:52.487108 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt cannot run because no profile was specified for this dbt project.
+  To specify a profile for this project, add a line like the this to
+  your dbt_project.yml file:
+  
+  profile: [profile name]
+  
+  Here, [profile name] should be replaced with a profile name
+  defined in your profiles.yml file. You can find profiles.yml here:
+  
+  /home/mocha/.dbt/profiles.yml
+  
+[0m15:21:52.492167 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.24695712, "process_in_blocks": "720", "process_kernel_time": 1.480208, "process_mem_max_rss": "97508", "process_out_blocks": "8", "process_user_time": 2.158802}
+[0m15:21:52.493160 [debug] [MainThread]: Command `dbt run` failed at 15:21:52.492905 after 0.25 seconds
+[0m15:21:52.493821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70acd6d5b410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70acd276ff50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70acd276ffb0>]}
+[0m15:21:52.494800 [debug] [MainThread]: Flushing usage events
+[0m15:21:53.511550 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:33:35.798940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x707f55450140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x707f554c2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x707f531daff0>]}
+
+
+============================== 15:33:35.852450 | 2f0caa98-aab6-4153-8e4f-9d68373f628d ==============================
+[0m15:33:35.852450 [info ] [MainThread]: Running with dbt=1.10.8
+[0m15:33:35.854913 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/mocha/respos/weather-data-project/logs', 'debug': 'False', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --select staging --profiles-dir .', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:33:35.861709 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'weather_profile'
+[0m15:33:35.866901 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.25067246, "process_in_blocks": "3720", "process_kernel_time": 2.858173, "process_mem_max_rss": "97236", "process_out_blocks": "16", "process_user_time": 2.360545}
+[0m15:33:35.871508 [debug] [MainThread]: Command `dbt run` failed at 15:33:35.869365 after 0.25 seconds
+[0m15:33:35.873596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x707f539ad730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x707f52c0d010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x707f52c0cd10>]}
+[0m15:33:35.875442 [debug] [MainThread]: Flushing usage events
+[0m15:33:36.802193 [debug] [MainThread]: An error was encountered while trying to flush usage events
