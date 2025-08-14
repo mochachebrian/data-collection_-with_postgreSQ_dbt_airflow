@@ -14,22 +14,23 @@ It is designed to demonstrate a modern **data engineering pipeline** from data i
 - **Docker** – to containerize all services for easy deployment
 - **Docker Compose** – for managing multi-container setup
 
----
-
-##  Project Structure
 weather-data-project/
 │
-├── airflow/ # Airflow DAGs, logs, and config
-│ ├── dags/ # DAG scripts
-│ └── plugins/ # Custom operators/hooks (if any)
+├── dags/                      # Airflow DAG definitions
+│   ├── weather_api_orchestrator.py
 │
-├── dbt/ # dbt project folder
-│ ├── models/ # dbt models (staging, marts, etc.)
-│ └── profiles.yml # dbt connection settings
+├── dbt/                       # dbt project folder
+│   ├── my_project/
+│       ├── models/            # dbt models
+│       ├── snapshots/         # dbt snapshots
+│       ├── tests/             
+│       ├── dbt_project.yml
 │
-├── scripts/ # Python ingestion scripts
-│ └── insert_data.py
+├── scripts/                   # Data ingestion and utility scripts
+│   ├── insert_data.py
+│   ├── main.py
 │
-├── docker-compose.yml # Docker services configuration
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+├── docker-compose.yml         # Docker setup for the project
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
+└── .env                       # Environment variables
