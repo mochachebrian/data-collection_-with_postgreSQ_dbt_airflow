@@ -6,7 +6,7 @@ It is designed to demonstrate a modern **data engineering pipeline** from data i
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **Python** – for data ingestion from the Weather API
 - **PostgreSQL** – database for storing raw and transformed data
 - **dbt** – for SQL-based data transformations and modeling
@@ -14,23 +14,3 @@ It is designed to demonstrate a modern **data engineering pipeline** from data i
 - **Docker** – to containerize all services for easy deployment
 - **Docker Compose** – for managing multi-container setup
 
-weather-data-project/
-│
-├── dags/                      # Airflow DAG definitions
-│   ├── weather_api_orchestrator.py
-│
-├── dbt/                       # dbt project folder
-│   ├── my_project/
-│       ├── models/            # dbt models
-│       ├── snapshots/         # dbt snapshots
-│       ├── tests/             
-│       ├── dbt_project.yml
-│
-├── scripts/                   # Data ingestion and utility scripts
-│   ├── insert_data.py
-│   ├── main.py
-│
-├── docker-compose.yml         # Docker setup for the project
-├── requirements.txt           # Python dependencies
-├── README.md                  # Project documentation
-└── .env                       # Environment variables
